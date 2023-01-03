@@ -26,6 +26,7 @@
     }],
     "react/jsx-no-useless-fragment": 0,
     "react/jsx-one-expression-per-line": 0,
+    "linebreak-style": 0,
     "react/jsx-props-no-spreading": 0,
     "react/jsx-wrap-multilines": [1, {
       "declaration": true,
