@@ -3,29 +3,28 @@ import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
+const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
+
 const Index = () => (
-  <Main
-    description={"Michael D'Angelo's personal website. New York based Stanford ICME graduate, "
-    + 'co-founder and CTO of Arthena, and YC Alumni.'}
-  >
+  <Main>
     <article className="post" id="index">
       <header>
         <div className="title">
-          <h2 data-testid="heading"><Link to="/">About this site</Link></h2>
+          <h2 data-testid="heading"><Link to="/">Welcome Folks</Link></h2>
           <p>
-            A beautiful, responsive, statically-generated,
-            react application written with modern Javascript.
+            A simple personal site, built in react
           </p>
         </div>
       </header>
-      <p> Welcome to my website. Please feel free to read more <Link to="/about">about me</Link>,
-        or you can check out my {' '}
-        <Link to="/resume">resume</Link>, {' '}
-        <Link to="/projects">projects</Link>, {' '}
-        view <Link to="/stats">site statistics</Link>, {' '}
-        or <Link to="/contact">contact</Link> me.
+      <p> Welcome to my website! It&apos;s great to have you here.
+        On this site, you can learn more about my background
+        and read about some of the projects I have worked on.
+        I hope you find the information interesting and that
+        it gives you a sense of who I am and what I do.
+        If you have any questions or would like to get in touch,
+        please don&apos;t hesitate to reach out. Thanks for visiting!
       </p>
-      <p> Source available <a href="https://github.com/mldangelo/personal-site">here</a>.</p>
+      <img width="20%" src={`${PUBLIC_URL}/images/auto.png`} alt="" />
     </article>
   </Main>
 );
